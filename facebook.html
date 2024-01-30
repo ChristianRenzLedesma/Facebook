@@ -3,118 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>facebook</title>
+    <title>Facebook</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-        .div1{
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .div1 {
             text-align: center;
-            font-family: Roboto;
             border: 1px solid;
-            border-left: 1px;
             border-top: 1px;
+            border-left: 1px;
             border-right: 1px;
         }
-        #div2{
+
+        #div2 {
             text-align: center;
-            font-family: Roboto;
         }
-        .p1{
+
+        .p1 {
             font-size: 14px;
-            text-align: center;
         }
-        .p1, #div2{
-            line-height: 20px;
-        }
-        .div3{
-            width: 300px;
+
+        .div3 {
+            width: 100%;
+            max-width: 300px;
             height: 320px;
-            background-color: black;
-            display: block;
             margin: 0 auto;
+            background-color: black;
             border-radius: 30px;
+            margin-bottom: 20px;
         }
-        .in{
-            width: 240px;
+
+        .in {
+            width: 100%;
+            max-width: 240px;
             height: 251px;
-            margin-left: 70px;
-            margin-top: -310px;
-            padding: 0 0 40px;
+            margin: 0 auto;
+            margin-top: -320px;
+            padding: 40px 0;
             background-color: lightgray;
+            
+            overflow: hidden;
         }
-        .blue{
+
+        .blue {
+            height: 50px;
             text-align: center;
-            font-family: roboto;
             background-color: blue;
+            color: white;
+            margin-top: -60px;
         }
-        .profile{
-            width: 239px;
+
+        .profile {
+            width: 100%;
+            max-width: 239px;
             height: 60px;
             background-color: white;
+            overflow: hidden;
         }
-        .profile img{
+
+        .profile img {
+            width: 60px;
             height: 60px;
+            float: left;
         }
-        .div4{
+
+        .profile h4 {
+            margin-left: 10px;
+            margin-top: -10px;
+            padding-top: 15px;
+            font-size: 13px;
+            float: left;
+        }
+
+        .div4 {
             height: 50px;
-            margin-top: -29px;
+            margin-top: -60px;
             background-color: white;
             border: 1px solid black;
             border-bottom: 500px;
             border-left: 100px;
             border-right: 100px;
         }
-        .button{
-            width: 180px;
+
+        .button,
+        .button2 {
+            width: 100%;
+            max-width: none;
             background-color: lightgray;
             border: none;
-            color: white;
-            padding: 15px 32px;
+            color: black;
+            padding: 15px 0;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
+            margin-bottom: 10px;
             cursor: pointer;
-            color: black;
-            font-family: roboto;
             border-radius: 8px;
         }
-        .button2{
-            width: 180px;
+
+        .button2 {
             background-color: blue;
-            border: none;
             color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            color: white;
-            font-family: roboto;
-            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="div1">
-        <h3><strong>Facebook</strong></h3>
+    <div class="container">
+        <div class="div1">
+            <h3><strong>Facebook</strong></h3>
+        </div>
+        <div id="div2">
+            <h2>Save Login info?</h2>
+            <p class="p1">Next time you login on this device, just tap your account instead of typing a password.</p>
+        </div>
+        <div class="div3"></div>
+        <div class="in">
+            <div class="blue"><h3>facebook</h3></div>
+            <div class="profile"><img src="../Facebook/profile.jpg" alt="Profile Image"><h4>Name</h4></div>
+        </div>
+        <div class="div4"></div>
+        <button class="button">Not Now</button>
+        <button class="button2">OK</button>
     </div>
-    <div id="div2">
-        <h2>Save Login info?</h2>
-        <p class="p1">Next time you  login on this device, just tap your account istead of typing a password.</p>
-    </div>
-    <div class="div3">
-    </div>
-    <div class="in">
-        <div class="blue"><h3>facebook</h3></div>
-        <div class="profile"><img src="profile.jpg" alt="This image"><h4 style="margin-top: -60px; margin-left: 70px; font-size: 13px;">Name</h4></div>
-    </div>
-    <div class="div4"></div>
-    <button class="button">Not Now</h4Not></button>
-    <button class="button2">OK</button>
 </body>
 </html>
